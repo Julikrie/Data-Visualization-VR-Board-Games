@@ -5,19 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject startMenu;
-    public GameObject welcomeMenu;
 
-    public void Start()
+    public void MainSceneLoad()
     {
-        welcomeMenu.SetActive(true);
-    }
-    public void LoadStartMenu()
-    {
-        if (!welcomeMenu.activeSelf)
-        {
-            welcomeMenu.SetActive(true);
-        }
+        SceneManager.LoadScene(1);
     }
 }
 
