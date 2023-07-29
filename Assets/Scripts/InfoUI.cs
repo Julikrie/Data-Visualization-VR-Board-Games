@@ -18,6 +18,10 @@ public class InfoUI : MonoBehaviour
         {
             gameObject.SetActive(true);
         }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
     
 }
